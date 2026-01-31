@@ -1,0 +1,107 @@
+
+POST http://localhost:9090/register HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "username": "rahu",
+  "password": "pass@123",
+  "email": "rahu@gmail.com",
+  "name": "rahu Choudhary"
+}
+
+###
+POST http://localhost:9090/login HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "email": "priyanka@gmail.com",
+  "password": "password@123"
+}
+###
+###
+POST http://localhost:9090/login HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "email": "rahu@gmail.com",
+  "password": "pass@123"
+}
+
+###
+GET http://localhost:9090/get_user_and_profile HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "token":"41219f6a230493d508decae23e92570f4744446bcd58650c088c82d49cf6b1c2"
+}
+
+###
+GET http://localhost:9090/get_user_and_profile HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "token":"2f200e9a0ae1bb33ba4bf574a9695773c0490a2009d410e235f0a99562d2f0b9"
+}
+###
+POST  http://localhost:9090/update_profile_data HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "token":"5afb92247cb00fde00e3d719d05f8c11086d651dc3b70caeae49e970a74194a9",
+   "bio": "",
+   "currentPost":"CTO",
+   "pastwork":[
+    {
+      "company" : "google",
+      "position": "CTO",
+      "years":"9+"
+    }
+   ],
+   "education": [
+    {
+      "school":"NIT",
+      "degree":"B-tech",
+      "fieldOfStudy":"2015-2019"
+    }
+   ]
+}
+
+###
+POST  http://localhost:9090/update_profile_data HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "token":"2f200e9a0ae1bb33ba4bf574a9695773c0490a2009d410e235f0a99562d2f0b9",
+   "bio": "",
+   "currentPost":"CTO",
+   "pastwork":[
+    {
+      "company" : "microsoft",
+      "position": "CTO",
+      "years":"2+"
+    }
+   ],
+   "education": [
+    {
+      "school":"IIT",
+      "degree":"B-tech",
+      "fieldOfStudy":"2015-2019"
+    }
+   ]
+}
+
+###
+GET http://localhost:9090/user/get_all_users HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+}
+

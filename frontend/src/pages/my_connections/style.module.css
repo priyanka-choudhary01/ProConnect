@@ -1,0 +1,35 @@
+
+ .userCard {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.profilePicture>img{
+    width: 4.5rem;
+    border-radius: 50%;
+}
+.myConnections{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+}
+.acceptBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    margin-right: 1.2rem;
+    border: 1px solid rgba(3,93,183,0.905);
+    outline: none;
+    color: rgba(3,93,183,0.905);
+    border-radius: 10px;
+    cursor: pointer;
+}
